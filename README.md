@@ -17,6 +17,20 @@
 아름다운 곡선을 만들고, **마우스를 클릭하면 새로운 블랙홀**이 생성되어 주변 천체들을
 강력하게 빨아들입니다.
 
+### 어바웃 (About)
+
+이 프로젝트는 **단일 HTML 파일**(`index.html`) 하나만으로 동작하는 고성능 중력 시뮬레이션입니다.
+외부 라이브러리, CDN, 빌드 단계가 전혀 필요 없습니다 — 파일을 브라우저로 열기만 하면
+즉시 시뮬레이션이 시작됩니다.
+
+핵심 목표는 세 가지입니다.
+
+- **시각적 아름다움** — 형광색 천체와 잔상이 만드는 우주적인 곡선 미학
+- **물리적 정확성** — Velocity Verlet 적분과 Plummer softening으로 50체가 안정적으로 공존
+- **상호작용성** — 클릭 한 번으로 블랙홀을 만들어 국지적인 중력 붕괴를 관찰
+
+즉, **짧은 코드 + 강한 임팩트**를 지향하는 미니멀 시뮬레이션 토이 프로젝트입니다.
+
 ### 구현 결정 사항 (How)
 
 | 결정 | 선택 | 이유 |
@@ -67,13 +81,6 @@ const CONFIG = {
 };
 ```
 
-### 로드맵
-
-- [x] 1단계: 50개 천체 N-body + 잔상
-- [x] 2단계: 클릭으로 블랙홀 생성
-- [ ] 3단계: 다양한 프리셋 (은하 충돌 / 태양계 / 이중성)
-- [ ] 4단계: Web Worker로 적분 오프로드 (대규모 N)
-
 ---
 
 ## 🇺🇸 English
@@ -118,13 +125,6 @@ const CONFIG = {
   SOFTENING: 20,
 };
 ```
-
-### Roadmap
-
-- [x] **Stage 1:** 50-body N-body + trails
-- [x] **Stage 2:** Click-to-spawn black hole
-- [ ] **Stage 3:** Presets — galaxy collision / solar system / binary
-- [ ] **Stage 4:** Web Worker integrator for large-N
 
 ---
 
