@@ -6,3 +6,6 @@
 .vscode/
 .idea/
 *.swp
+
+# Agent runtime cache
+.omo/
